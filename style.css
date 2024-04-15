@@ -13,15 +13,18 @@ body {
 .max-width {
   max-width: 1395px;
 }
+.margin-zero-auto {
+  margin: 0 auto;
+}
 
 .main-container {
-  margin: 0 auto;
   position: relative;
 }
 
 .header-container {
   /* height: 120px; */
-  box-shadow: 1px 0 5px 0 black;
+
+  position: relative;
 }
 
 .header {
@@ -30,6 +33,15 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 120px;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 30px -30px black;
+  z-index: 1;
+  background-color: white;
 }
 
 .logo-container {
@@ -67,6 +79,11 @@ body {
 .navbar li {
   list-style: none;
   font-weight: 600;
+}
+
+.body-container {
+  position: relative;
+  z-index: 0;
 }
 
 .btn {
