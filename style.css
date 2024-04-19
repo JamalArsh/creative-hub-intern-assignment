@@ -39,9 +39,14 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 4px 30px -30px black;
   z-index: 1;
   background-color: white;
+}
+
+.fixed-header-shadow {
+  -webkit-box-shadow: 0 4px 30px -30px black;
+  -moz-box-shadow: 0 4px 30px -30px black;
+  box-shadow: 0 4px 30px -30px black;
 }
 
 .logo-container {

@@ -24,3 +24,16 @@ function addAnimation() {
     });
   });
 }
+
+window.addEventListener("scroll", (event) => {
+  let headerScroll = this.scrollY;
+  if (headerScroll > 10) {
+    document
+      .querySelector(".fixed-header")
+      .classList.add("fixed-header-shadow");
+  } else {
+    document
+      .querySelector(".fixed-header")
+      .classList.remove("fixed-header-shadow");
+  }
+});
