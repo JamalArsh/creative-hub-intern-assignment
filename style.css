@@ -470,6 +470,11 @@ h3 {
     flex-direction: column;
   }
 
+  .big-card {
+    padding: 1.25rem;
+    gap: 1.25rem;
+  }
+
   .card-1 {
     grid-column-start: 1;
     grid-column-end: 2;
