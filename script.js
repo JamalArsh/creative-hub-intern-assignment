@@ -37,3 +37,27 @@ window.addEventListener("scroll", (event) => {
       .classList.remove("fixed-header-shadow");
   }
 });
+
+const hamb = document.querySelector(".hamb");
+
+console.log(hamb);
+
+hamb.addEventListener("click", () => {
+  document.getElementById("hamb-row-1").classList.toggle("hamb-row-1");
+
+  document.getElementById("hamb-row-2").classList.toggle("hamb-row-2");
+
+  document.getElementById("hamb-row-3").classList.toggle("hamb-row-3");
+
+  const targetElements = document.querySelectorAll(".collapse-panel");
+
+  targetElements.forEach((targetElement) => {
+    if (targetElement.classList.contains("collapse")) {
+      targetElement.classList.remove("collapse");
+      targetElement.classList.add("show");
+    } else {
+      targetElement.classList.remove("show");
+      targetElement.classList.add("collapse");
+    }
+  });
+});
